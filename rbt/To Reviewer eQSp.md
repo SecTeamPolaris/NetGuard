@@ -51,9 +51,9 @@ Thank you for your useful comments and suggestions on our manuscript. They are v
 
 
 
-**【Q3】**You need to add a detailed implementation section with technical details on how Magnifier is implemented.
+**【Q3】** You need to add a detailed implementation section with technical details on how Magnifier is implemented.
 
-**【A3】**Before deployment, the initialization of Magnifier involves the meticulous construction and distillation of fingerprints, as elaborated in Section 4. This process ensures the creation of well-defined fingerprints that form the basis for Magnifier's functionality. Subsequently, Magnifier has been effectively deployed in real-world scenarios. Specifically, it is employed for the detection of network access by mobile devices in both campus networks and production networks. The implementation is outlined as follows:
+**【A3】** Before deployment, the initialization of Magnifier involves the meticulous construction and distillation of fingerprints, as elaborated in Section 4. This process ensures the creation of well-defined fingerprints that form the basis for Magnifier's functionality. Subsequently, Magnifier has been effectively deployed in real-world scenarios. Specifically, it is employed for the detection of network access by mobile devices in both campus networks and production networks. The implementation is outlined as follows:
 
 1. Magnifier is strategically deployed on both the gateway of our campus network and the enterprise network gateway. The implementation utilizes the KAFKA and Protobuf framework, supported by the DPDK backend.
 2. Initially, a probe, developed using DPDK, is employed to capture passing traffic at the gateway. Upon capturing DNS traffic, the subsequent network traffic within a 15-second timeframe from the identified IP is collected and stored in the cache. 
@@ -62,9 +62,9 @@ Thank you for your useful comments and suggestions on our manuscript. They are v
 
 
 
-**【Q4】**not sure of the relevance to WebConf
+**【Q4】** not sure of the relevance to WebConf
 
-**【A4】**Our research is centered on enhancing efficient network monitoring and topology measurement by pinpointing unauthorized network access and collecting in-depth information about mobile devices. This aligns with the pivotal role of network or web management, characterized by the skillful acquisition of information within authorized networking domains. Our work falls within the scope of the track categorized as "traffic analysis." Additionally, we are pleased to note that papers addressing similar topics have had a profound impact on the WebConf community [1] [2] [3].
+**【A4】** Our research is centered on enhancing efficient network monitoring and topology measurement by pinpointing unauthorized network access and collecting in-depth information about mobile devices. This aligns with the pivotal role of network or web management, characterized by the skillful acquisition of information within authorized networking domains. Our work falls within the scope of the track categorized as "traffic analysis." Additionally, we are pleased to note that papers addressing similar topics have had a profound impact on the WebConf community [1] [2] [3].
 
 [1] Zheng, Wenbo, et al. "Learning to classify: A flow-based relation network for encrypted traffic classification." *WWW2020*. 2020.
 
