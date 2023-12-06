@@ -99,13 +99,17 @@ Thank you for your useful comments and suggestions on our manuscript. They are v
 ​	The initial dnForest captures fingerprints from all traffic generated when devices connect to the network, encompassing both specific and background traffic. The presence of background traffic can result in significant false alarms during classification, given that these applications are commonly found on various devices. Moreover, background traffic constitutes a substantial portion of the captured data, causing an imbalance among dnTrees within a dnForest. 
 
 ​	To address this challenge, we introduce a two-stage distillation algorithm designed to emphasize proprietary fingerprints while diminishing the importance of background ones. To further validate the efficiency of the algorithm, we conduct a comparison of confidence score distributions before and after fingerprint distillation. Specifically, for each test sample, we compute the confidence score alongside its corresponding fingerprint:
+
 $$
 Score^c_i = f(x_i^y,dnTree^y)
 $$
+
 ​	In the context of Magnifier, where f() represents the detector function, $x_i^y$ denotes a test sample from class y, and $dnTree^y$ represents the fingerprint of class y. By averaging the scores of all test samples, we derive confidence scores that facilitate correct classification. Simultaneously, we compute the confidence score with respect to other fingerprints:
+
 $$
 Score^w_i = \frac{\sum\limits_{k\in Y,k \neq y} f(x_i^y,dnTree^k)}{|Y|}
 $$
+
 where |Y| is the number of the generated fingerprints. By averaging the scores of all test samples, we can obtain confidence scores indicative of incorrect classifications.
 
 ​	Before fingerprint distillation, the average $Score^c$ and $Score^w$ is 0.678 and 0.461, respectively. After the two-stage distillation, the average $Score^c$ and $Score^w$ is 0.883 (30.2% improvement) and 0.167 (63.8% decline), respectively. The enhanced divergence of the two scores theoretically explain the experimental results in Section 6.5. 
