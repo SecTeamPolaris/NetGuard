@@ -1,6 +1,4 @@
-# Magnifier
-
-Source code for the under-review TIFS paper, ***Magnifier: Detecting Network Access via Lightweight Traffic-based Fingerprints***
+# Network Access Detector
 
 The project is written in Pytorch using the following backend: Intel i7-9750 @2.6GHz, 16GB RAM, NVIDIA GeForce RTX2060; Windows 10, CUDA 10.1, and PyTorch 1.0.1.
 
