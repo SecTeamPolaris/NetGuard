@@ -19,4 +19,5 @@ In ScenarioD, we capture traffic that does not contain any network access behavi
 This dataset comprises approximately 10GB of network traffic, encompassing a broad spectrum of mainstream mobile device brands, including Apple (5 models), Huawei (5 models), Samsung (2 models), Xiaomi (5 models), Vivo (5 models), Oppo (3 models), and Coolpad (1 model).
 
 
-<div align=center><img src="https://github.com/SecTeamPolaris/NetGuard/blob/main/1.png" width="50%" height="50%"></div>
+<div align=center><img src="https://github.com/user-attachments/assets/9bf4ca79-e76e-4976-bab9-6fbb26a8df98" width="50%" height="50%"></div>
+
